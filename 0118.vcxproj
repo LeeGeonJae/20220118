@@ -144,6 +144,8 @@
     <ClCompile Include="Monster.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Slime.cpp" />
+    <ClCompile Include="State.cpp" />
+    <ClCompile Include="Transition.cpp" />
     <ClCompile Include="Wildboar.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -151,6 +153,8 @@
     <ClInclude Include="Monster.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Slime.h" />
+    <ClInclude Include="State.h" />
+    <ClInclude Include="Transition.h" />
     <ClInclude Include="Wildboar.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
