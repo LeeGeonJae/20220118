@@ -3,21 +3,37 @@
 #include "Slime.h"
 #include "Goblin.h"
 #include "Wildboar.h"
+#include <vector> //쉽게 크기가 바뀌는 계열, STL
 
 using namespace std;
 
 int main()
 {
-	Player NewPlayer;
+	vector<Player*> PlayerList;
 
-	NewPlayer.SetHP(-100);
-	int CurrentHP =
-	NewPlayer.GetHP();
+	PlayerList.push_back(new Player());
+	PlayerList.push_back(new Player());
+	PlayerList.push_back(new Player());
+	PlayerList.push_back(new Player());
+	PlayerList.push_back(new Player());
+	PlayerList.push_back(new Player());
+	PlayerList.push_back(new Player());
 
-	Slime NewSlime;
-	Goblin NewGoblin;
+	cout << PlayerList.size() << endl;
 
-	NewGoblin.Wapon;
+	for (size_t i = 0; i < PlayerList.size(); ++i)
+	{
+		cout << "Player " << (i + 1) << "번째 HP : " << PlayerList[i]->GetHP() << endl;
+	}
+
+	for (size_t i = 0; i < PlayerList.size(); ++i)
+	{
+		delete PlayerList[i];
+	}
+
+	PlayerList.clear();
+
+	cout << PlayerList.size() << endl;
 
 	return 0;
 }

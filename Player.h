@@ -1,15 +1,27 @@
 #pragma once
+#include <iostream>
+//encapsulation
 
+using namespace std;
 
 class Player
 {
 private:
 	int HP;
-public:
 	int MP;
 	int Gold;
 
 public:
+	Player() //기본 생성자(constructor)0
+	{
+		cout << "플레이어 생성" << endl;
+	}
+
+	~Player() //소멸자, 파괴자(destructor)
+	{
+		cout << "플레이어 사라짐" << endl;
+	}
+
 	//const 함수 제일 앞 반환형
 	//const Player* GetHP(); // 반환값을 수정하지 마세요.
 
