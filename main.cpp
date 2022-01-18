@@ -7,8 +7,11 @@ int main()
 {
 	Player NewPlayer;
 
-	NewPlayer.Gold = 10;
-	NewPlayer.HP = 100;
+	NewPlayer.SetHP(-100);
+	int CurrentHP =
+	NewPlayer.GetHP();
+
+
 	NewPlayer.Attack();
 	NewPlayer.Move();
 	NewPlayer.Collect();
