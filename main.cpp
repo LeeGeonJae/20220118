@@ -23,7 +23,7 @@ int main()
 	TransitionList.push_back(new Transition(3, "HP없음", 4));
 
 	int MonsterCurrentState = 2; //추격
-	string MonsterCondition = "적놓침";
+	string MonsterCondition = "사정거리접근";
 	int MonsterNextState = 0;
 
 	for (size_t i = 0; i < TransitionList.size(); ++i)
