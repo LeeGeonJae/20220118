@@ -141,12 +141,14 @@
   <ItemGroup>
     <ClCompile Include="Goblin.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Monster.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Slime.cpp" />
     <ClCompile Include="Wildboar.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Goblin.h" />
+    <ClInclude Include="Monster.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Slime.h" />
     <ClInclude Include="Wildboar.h" />

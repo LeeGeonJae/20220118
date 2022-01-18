@@ -1,5 +1,8 @@
 #include <iostream>
 #include "Player.h"
+#include "Slime.h"
+#include "Goblin.h"
+#include "Wildboar.h"
 
 using namespace std;
 
@@ -11,12 +14,10 @@ int main()
 	int CurrentHP =
 	NewPlayer.GetHP();
 
+	Slime NewSlime;
+	Goblin NewGoblin;
 
-	NewPlayer.Attack();
-	NewPlayer.Move();
-	NewPlayer.Collect();
-	NewPlayer.Run();
-	
+	NewGoblin.Wapon;
 
 	return 0;
 }

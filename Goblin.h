@@ -1,14 +1,11 @@
 #pragma once
-class Goblin
+#include "Monster.h"
+
+//상속(계승), Monster의 모든 기능을 넘겨주겠다.
+class Goblin : public Monster
 {
 public:
-	int HP;
-	int MP;
-	int Gold;
-
-	void Move();
-	void Attack();
-	void Run();
+	int Wapon;
 
 };
 
